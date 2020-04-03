@@ -1,0 +1,146 @@
+.testi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $c1;
+  .testi-intro {
+    text-align: center;
+    padding-top: 5rem;
+    h5 {
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      line-height: 3rem;
+      padding: 0.2rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+    p {
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+      line-height: 3rem;
+      font-weight: bold;
+      padding: 0.2rem;
+      margin-bottom: 1rem;
+      font-family: $f2;
+      color: white;
+    }
+  }
+  .testi-outer-container {
+    display: flex;
+    overflow: hidden;
+    width: 700px;
+
+    .testi-inner-container {
+      display: flex;
+      width: fit-content;
+      transition: all 1s ease-in-out;
+      // transform: translateX(-700px);
+
+      .testimo {
+        width: 700px;
+        padding: 0 3rem;
+        text-align: center;
+
+        h5 {
+          font-size: 1.8rem;
+          margin: 2rem 0 0.5rem 0;
+          color: white;
+          letter-spacing: 1px;
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 600;
+          color: white;
+          letter-spacing: 1px;
+
+          &:last-child {
+            font-size: 1.5rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testi-nav {
+  margin: 2rem 0;
+  i {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.i-filled {
+  color: white !important;
+  background-color: white;
+  border-radius: 100rem;
+}
+
+.slide2 {
+  transform: translatex(-700px);
+}
+.slide3 {
+  transform: translatex(-1400px);
+}
+
+@media screen and (max-width: 500px) {
+  .testi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .testi-intro {
+      text-align: center;
+      padding-top: 5rem;
+      h5 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        line-height: 3rem;
+        padding: 0.2rem;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        font-weight: bold;
+        padding: 0.2rem;
+        margin-bottom: 1rem;
+        font-family: $f2;
+      }
+    }
+    .testi-outer-container {
+      width: 350px;
+
+      .testi-inner-container {
+        .testimo {
+          width: 350px;
+        }
+      }
+    }
+  }
+
+  .testi-nav {
+    margin: 2rem 0;
+    i {
+      margin: 0 1rem;
+      font-size: 2rem;
+      color: rgb(196, 196, 196);
+      cursor: pointer;
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .slide2 {
+    transform: translatex(-350px);
+  }
+  .slide3 {
+    transform: translatex(-700px);
+  }
+}

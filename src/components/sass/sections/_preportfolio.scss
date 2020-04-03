@@ -1,0 +1,90 @@
+.portfolioPre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h5 {
+    margin: 3rem 0;
+    font-size: 3rem;
+
+    p {
+      display: inline;
+      font-weight: 700;
+    }
+  }
+  .gallery {
+    height: 620px;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+.evei {
+  &::after {
+    content: "Check More";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($c1, $alpha: 0.8);
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+    transform: scale(0);
+  }
+  &:hover {
+    &::after {
+      transform: scale(1);
+    }
+  }
+}
+.more {
+  display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 501px) {
+  .portfolioPre {
+    .gallery {
+      height: calc(170px * 2);
+      grid-template-columns: repeat(4, 170px);
+      grid-template-rows: repeat(2, 1fr);
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolioPre {
+    .gallery {
+      height: fit-content;
+      grid-template-columns: 320px;
+      grid-template-rows: auto;
+      margin-bottom: 3rem;
+      grid-gap: 1.5rem;
+    }
+  }
+  .more {
+    margin: 2rem 0 5rem;
+
+    a {
+      color: $c1;
+      border: 2px solid $c1;
+      font-size: 2rem;
+      font-family: $f2;
+      padding: 1rem 6rem;
+      border-radius: 5px;
+      font-weight: 700;
+      transition: background-color 0.5s ease;
+
+      &:hover {
+        background-color: $c1;
+        color: white;
+      }
+    }
+  }
+}

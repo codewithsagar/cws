@@ -1,0 +1,47 @@
+{
+  "section": "data",
+  "global": {
+    "name": "Sagar Jasani",
+    "mobile": "7984673693",
+    "mail": "contact@codewithsagar.com",
+    "facebook": "sagargjasani",
+    "instagram": "sagargjasani",
+    "behance": "sagargjasani"
+  },
+  "hero": {
+    "heroTagline": "I'm a creative graphic designer and also a Professor."
+  },
+  "sectionOne": {
+    "is1Text": "Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.",
+    "secondTagline": "I'm passionate about graphics, programming, and photography.",
+    "SecondTagline": "asd"
+  },
+  "projectNumber": {
+    "projects": 21,
+    "clients": "203",
+    "experience": "02"
+  },
+  "testimonial": [
+    {
+      "name": "Lynda Lazarevic",
+      "company": "Raunds Embroidery",
+      "testi": "Sagar was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of designer you can trust with a project from start to finish.",
+      "id": "Testimonial 1"
+    },
+    {
+      "name": "Ketan Jasani",
+      "company": "Ocso International",
+      "testi": "Fantastic work! I am just impressed by Sagar's service quality and working strategy. I hired him for the development of my online store and they have satisfied me to the full by delivering the exceptional solution.",
+      "id": "Testimonial 2"
+    },
+    {
+      "name": "Ruturajsinh Jadeja",
+      "company": "Agro Vista Exim",
+      "testi": "One of the great web development Freelacer in India I have ever worked with. My Wordpress based website developed exactly as what I wanted. With an eye for detail & a great understanding of Wordpress",
+      "id": "Testimonial 3"
+    }
+  ],
+  "footer": {
+    "quote": "Live, Learn, Love & Level Up Everyday"
+  }
+}

@@ -1,0 +1,131 @@
+.preFooter {
+  display: grid;
+  place-items: center;
+  h5 {
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+    font-size: 3rem;
+  }
+  form {
+    input {
+      border: none;
+      border-bottom: 1px solid $c3;
+      margin: 0 1rem;
+      width: 300px;
+      height: 30px;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      &:focus {
+        border-bottom: 1px solid $c1;
+        color: $c1;
+      }
+    }
+    button {
+      border: none;
+      color: white;
+      background-color: $c1;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      font-family: $f2;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.07);
+      }
+
+      &:focus {
+        transform: scale(1.04);
+      }
+    }
+  }
+}
+.postFooter {
+  background-color: #293347;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 10px;
+  transform: translateY(50%);
+
+  a {
+    border: 1px solid white;
+    display: grid;
+    place-items: center;
+    padding: 1.3rem;
+    font-size: 2.2rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: $c1;
+      border: 1px solid $c1;
+      transform: scale(1.2);
+    }
+  }
+}
+.credit {
+  background-color: $c1;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    h1 {
+      font-size: 3.5rem;
+      color: white;
+      padding: 1rem 0;
+    }
+    h5 {
+      font-size: 2.1rem;
+      font-family: $f2;
+      color: white;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    p {
+      color: white;
+      font-size: 1.3rem;
+      text-align: center;
+
+      a {
+        color: white;
+        font-size: 1.6rem;
+      }
+      padding-bottom: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 501px) {
+  .preFooter {
+    form {
+      display: flex;
+      flex-direction: column;
+      input {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .preFooter {
+    form {
+      display: flex;
+      flex-direction: column;
+      input {
+        margin: 1rem 0;
+      }
+    }
+  }
+  .postFooter {
+    padding: 3rem;
+
+    a {
+      padding: 1rem;
+      font-size: 2rem;
+      margin: 0 1rem;
+    }
+  }
+}

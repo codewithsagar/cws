@@ -1,0 +1,42 @@
+{
+  "name": "gatsby-using-page-transitions",
+  "description": "Gatsby example site using page transitions",
+  "version": "1.0.0",
+  "author": "Sagar Jasani <https://www.codewithsagar.com>",
+  "dependencies": {
+    "@wordpress/browserslist-config": "^2.6.0",
+    "framer-motion": "^1.6.3",
+    "gatsby": "^2.19.12",
+    "gatsby-image": "^2.2.40",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sass": "^2.1.28",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-plugin-tinacms": "^0.1.28",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-tinacms-git": "^0.4.1",
+    "gatsby-tinacms-json": "^0.8.12",
+    "gatsby-transformer-json": "^2.2.28",
+    "gatsby-transformer-sharp": "^2.3.14",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.9.0",
+    "styled-components": "^5.0.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}

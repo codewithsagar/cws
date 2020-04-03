@@ -1,0 +1,86 @@
+.mainPort {
+  position: relative;
+  .title {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+  }
+  .mainPortCont {
+    display: grid;
+    place-items: center;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 300px);
+      grid-template-rows: auto;
+      grid-gap: 1.5rem;
+    }
+  }
+}
+
+.evei2 {
+  &::after {
+    content: attr(data-alt);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    background-color: rgba($c1, $alpha: 0.8);
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+    transform: scale(0);
+  }
+  &:hover {
+    &::after {
+      transform: scale(1);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 501px) {
+  .mainPort {
+    position: relative;
+    .mainPortCont {
+      display: grid;
+      place-items: center;
+      padding-top: 3rem;
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+      }
+    }
+  }
+
+  .evei2 {
+    &::after {
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainPort {
+    position: relative;
+
+    .mainPortCont {
+      padding-top: 2rem;
+      .gallery {
+        grid-template-columns: repeat(1, 350px);
+      }
+    }
+  }
+
+  .evei2 {
+    &::after {
+      height: 350px;
+      width: 350px;
+    }
+  }
+}

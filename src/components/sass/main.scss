@@ -1,0 +1,17 @@
+html,
+body,
+:root {
+  --tina-color-primary-light: Red !important;
+  --tina-color-primary: Crimson !important;
+  --tina-color-primary-dark: Firebrick !important;
+}
+@import "abs/variables";
+@import "base/base";
+@import "sections/hero.scss";
+@import "sections/is1.scss";
+@import "sections/projectNumber.scss";
+@import "sections/testi.scss";
+@import "sections/clients.scss";
+@import "sections/footer.scss";
+@import "sections/preportfolio.scss";
+@import "sections/mainPort.scss";

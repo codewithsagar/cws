@@ -1,0 +1,84 @@
+html,
+body,
+:root {
+  --tina-color-primary-light: Red !important;
+  --tina-color-primary: Crimson !important;
+  --tina-color-primary-dark: Firebrick !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "cabin", serif;
+  font-family: $f1;
+}
+*:focus {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: $c2;
+}
+
+p {
+  font-family: $f2;
+}
+.container {
+  width: 70vw;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) and (min-width: 501px) {
+  .container {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+p {
+  font-family: $f2;
+  font-weight: 300;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-left: 1px solid #e6ecf8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #293347;
+}
+
+@font-face {
+  font-family: "Eurostile";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Eurostile"), url("/eurostile.woff") format("woff");
+}
+
+// @font-face {
+//   font-family: "EuroStyle Normal";
+//   font-style: normal;
+//   font-weight: normal;
+//   src: local("EuroStyle Normal"),
+//     url("../fonts/EuroStyle\ Normal.woff") format("woff");
+// }
+
+// box-shadow: 0px 0px 25px 1px rgba(94, 98, 119, 0.2);
