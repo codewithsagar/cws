@@ -6,7 +6,7 @@
   "dependencies": {
     "@wordpress/browserslist-config": "^2.6.0",
     "framer-motion": "^1.6.3",
-    "gatsby": "^2.19.12",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.40",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sass": "^2.1.28",
